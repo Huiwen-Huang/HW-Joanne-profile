@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  height: calc(100vh);
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true) center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+  text-align: left;
+}
+
+.header p {
+  font-size: 24px;
+  line-height: 1.5;
+  font: italic normal bold 24px/42px Roboto;
+}
+
+.header h1 {
+  font-size: 80px;
+  margin-bottom: 32px;
+  font: italic normal 900 80px/106px Roboto;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+  margin-right: 16px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about .content {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .content h2 {
+  margin-top: 56px;
+  margin-bottom: 40px;
+  font-size: 64px;
+  font: italic normal medium 64px/84px Roboto;
+}
+
+.about .content img {
+  width: 384px;
+  height: 384px;
+  margin-bottom: 20px;
+}
+
+.about .content .name p {
+  font-size: 24px;
+  line-height: 42px;
+  margin-bottom: 4px;
+  font: italic normal bold 24px/42px Roboto;
+}
+
+.about .content .school p {
+  font-size: 24px;
+  line-height: 36px;
+  font: italic normal bold 24px/36px Roboto;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.about .content ul {
+  width: 384px;
+  margin: 0 auto 56px auto;
+  border-top: 1px solid #000;
+}
+
+.about .content ul li {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .content ul li .dot {
+  background-color: #891818;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+}
+
+.about .content ul li p {
+  font-size: 24px;
+  line-height: 42px;
+  font: italic normal bold 24px/42px Roboto;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #000;
+  color: #ffff;
+  margin-bottom: 56px;
+}
+
+.brand .content h2 {
+  margin-top: 56px;
+  margin-bottom: 12px;
+  font-size: 64px;
+  line-height: 84px;
+  font: italic normal medium 64px/84px Roboto;
+}
+
+.brand .content p {
+  font-size: 24px;
+  line-height: 42px;
+  font: italic normal medium 24px/42px Roboto;
+  margin-bottom: 32px;
+}
+
+.brand .content .text p {
+  font-size: 24px;
+  line-height: 30px;
+  font: italic normal medium 24px/30px Roboto;
+  margin-bottom: 32px;
+}
+
+.brand .content img {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  width: 792px;
+  height: 416px;
+}
+
+.brand .content ul {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.brand .content ul li img {
+  margin: 0;
+  width: 588px;
+  height: 416px;
+}
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.works h2 {
+  font-size: 64px;
+  line-height: 84px;
+  font: italic normal medium 64px/84px Roboto;
+  margin-bottom: 16px;
+}
+
+.works p {
+  font-size: 20px;
+  line-height: 30px;
+  font: italic normal medium 20px/30px Roboto;
+}
+
+.works ul {
+  margin-top: 56px;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.works ul img {
+  margin-bottom: 16px;
+}
+
+.works ul p {
+  font-size: 20px;
+  line-height: 42px;
+  font: italic normal medium 20px/42px Roboto;
+  margin-bottom: 48px;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer h2 {
+  font-size: 64px;
+  line-height: 84px;
+  font: italic normal medium 64px/84px Roboto;
+}
+
+.footer p {
+  margin-top: 16px;
+  font-size: 24px;
+  line-height: 36px;
+  font: italic normal medium 24px/36px Roboto;
+}
+/*# sourceMappingURL=all.css.map */
